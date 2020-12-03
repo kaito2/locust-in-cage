@@ -1,0 +1,31 @@
+# Default values for locust-in-cage.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+locust:
+  image:
+    # TODO: Updated to version 1 or higher.
+    tag: 0.9.0
+  master:
+    config:
+      target-host: "http://aaa.example.com"
+    resources:
+      requests:
+        cpu: "350m"
+        memory: "256Mi"
+      limits:
+        cpu: "350m"
+        memory: "256Mi"
+    # nodeSelector:
+    #   use: "forLoadGenerator"
+  worker:
+    replicaCount: 3
+    resources:
+      requests:
+        cpu: "350m"
+        memory: "256Mi"
+      limits:
+        cpu: "350m"
+        memory: "256Mi"
+    # nodeSelector:
+    #   use: "forLoadGenerator"

@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  locust-in-cage:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-11-26T01:25:05.198727+09:00"
+    dependencies:
+    - name: locust
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 1.2.1
+    description: A Helm chart for Kubernetes
+    digest: 7366618e5d05f33b4189fad9b3015d4cb8367b8dd54734dcc7bc48c5828c6d3f
+    name: locust-in-cage
+    type: application
+    urls:
+    - locust-in-cage-0.1.1.tgz
+    version: 0.1.1
+generated: "2020-11-26T01:25:05.197214+09:00"
